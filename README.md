@@ -1,20 +1,14 @@
 # Chinese-Funds-Scraping-and-Filtering 中国基金爬虫获取历史数据与筛选
+## ***仅供参考交流之用，盈亏自负。***
 
-主要逻辑是基于动量与最大回撤进行筛选，加入了下行标准差和Sharpe进行辅助筛选。
+基于动量,最大回撤,下行标准差及Sharpe Ratio的简单基金筛选程序，
 
 ## Repository contents
-* Get_and_Merge_Data.py == Data downloading and X_y Split
-* Comparison_of_FFT_STFT_and_CWT.ipynb == Comparison of common signal decomposition methods
-* Training.py == simple LSTM model based on CWT signal
-
-## Repository summary
-### How to use?
-- 下载基金代码及名称（1_基金代码名称对照表.ipynb），数据来源:[天天基金网](http://fund.eastmoney.com/daogou/)和[网易财经](http://quotes.money.163.com/fn/service/netvalue.php?host=/fn/service/netvalue.php&page=1&query=STYPE:FDO;TYPE3:ZSX&fields=no,PUBLISHDATE,SYMBOL,SNAME,NAV,PCHG,M12RETRUN,SLNAVG,ZJZC&sort=PCHG&order=desc&count=500)。
-- 下载基金历史数据（2_获取基金历史数据.ipynb），数据来源[网易财经](http://quotes.money.163.com/fund/jzzs_000039_1.html)
-- 
+* 1_基金主题代码名称对照表.ipynb == 下载基金代码及名称，数据来源:[天天基金网](http://fund.eastmoney.com/daogou/)。
+* 2_获取基金历史数据.ipynb == 下载基金历史数据，数据来源[网易财经](http://quotes.money.163.com/fund/jzzs_000039_1.html)
+* 3_筛选.py == 根据用户关心的行业类型，激进程度来推荐top N 基金及其推荐持仓比例
 
 ### 可选择的行业 
-
 |工程建设|交运设备|农牧饲渔|煤炭采选|食品饮料|电子信息|通讯行业|房地产|塑胶制品|
 |:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
 |**家电行业**|**仪器仪表**|**电子元件**|**医药制造**|**化纤行业**|**券商信托**|**保险**|**银行**|**酿酒行业**|
@@ -29,3 +23,7 @@
 |**边缘计算**|**单抗概念**|**标准普尔**|**光刻胶**|**国产芯片**|**无线耳机**|**白酒**|**CRO**|**云游戏**|
 |**专用设备**|**氮化镓**|**半导体**|**数据中心**|**中芯概念**|**网红直播**|**无线充电**|**航天概念**|**生物识别**|
 
+### 输出示例
+<p align="middle">
+  <img src="img/smaple_output.png" height="600"/>
+</p>
