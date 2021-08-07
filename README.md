@@ -1,4 +1,4 @@
-# Chinese-Funds-Scraping-and-Filtering 中国基金爬虫获取历史数据与筛选
+# Chinese-Funds-Scraping-and-Filtering 基金历史数据爬虫与筛选
 ## ***仅供参考交流之用，盈亏自负。***
 
 基于动量,最大回撤,下行标准差及Sharpe Ratio的简单基金筛选程序，
