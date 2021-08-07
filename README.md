@@ -1,6 +1,6 @@
 # Chinese-Funds-Scraping-and-Filtering 中国基金爬虫获取历史数据与筛选
 
-主要逻辑是基于动量与最大回撤进行筛选，加入了下行标准差和下行Sharpe进行辅助筛选。
+主要逻辑是基于动量与最大回撤进行筛选，加入了下行标准差和Sharpe进行辅助筛选。
 
 ## Repository contents
 * Get_and_Merge_Data.py == Data downloading and X_y Split
